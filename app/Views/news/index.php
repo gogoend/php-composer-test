@@ -3,11 +3,14 @@
  * @Author: gogoend
  * @Date: 2020-06-22 16:06:24
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-22 16:08:02
+ * @LastEditTime: 2020-06-22 16:32:43
  * @FilePath: \php-composer-test\app\Views\news\index.php
  * @Description: 
  */  
  -->
+<?php
+    // var_dump($news)
+?>
 <h2><?= $title ?></h2>
 <?php if (!empty($news) && is_array($news)) : ?>
 
@@ -16,7 +19,7 @@
         <h3><?= $news_item['title'] ?></h3>
 
         <div class="main">
-            <?= $news_item['text'] ?>
+            <?= $news_item['body'] ?>
         </div>
         <p><a href="<?= '/news/' . $news_item['slug'] ?>">View article</a></p>
 
