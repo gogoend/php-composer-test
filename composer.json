@@ -1,0 +1,12 @@
+{
+    "require": {
+		"php": ">=7.2",
+		"codeigniter4/framework": "^4"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
